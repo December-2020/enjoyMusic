@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2523800 */
+  src: url('../iconfont/iconfont.woff2?t=1621219022219') format('woff2'),
+       url('../iconfont/iconfont.woff?t=1621219022219') format('woff'),
+       url('../iconfont/iconfont.ttf?t=1621219022219') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-huitui:before {
+  content: "\e64e";
+}
+
+.icon-snowflake:before {
+  content: "\e6b1";
+}
+
+.icon-shouqi1:before {
+  content: "\e60d";
+}
+
+.icon-pinglun1:before {
+  content: "\e60f";
+}
+
+.icon-fenxiang:before {
+  content: "\e605";
+}
+
+.icon-xiazai:before {
+  content: "\e69a";
+}
+
+.icon-xingzhuangjiehe3:before {
+  content: "\e6af";
+}
+
+.icon-huanyihuan:before {
+  content: "\e62a";
+}
+
+.icon-danquxunhuan:before {
+  content: "\e602";
+}
+
+.icon-shunxubofang:before {
+  content: "\e604";
+}
+
+.icon-fufeixiazai:before {
+  content: "\e7ec";
+}
+
+.icon-yinliang:before {
+  content: "\e62d";
+}
+
+.icon-pinglun:before {
+  content: "\e60e";
+}
+
+.icon-gengduo1:before {
+  content: "\e66c";
+}
+
+.icon-shouqi:before {
+  content: "\e600";
+}
+
+.icon-quxiaoquanping:before {
+  content: "\e8c5";
+}
+
+.icon-gedan:before {
+  content: "\e636";
+}
+
+.icon-1_music80:before {
+  content: "\e6ae";
+}
+
+.icon-1_music82:before {
+  content: "\e6a9";
+}
+
+.icon-1_music84:before {
+  content: "\e6ab";
+}
+
+.icon-1_music83:before {
+  content: "\e6ac";
+}
+
+.icon-1_music90:before {
+  content: "\e6ad";
+}
+
+.icon-1_music85:before {
+  content: "\e6aa";
+}
+
+.icon-1_music89:before {
+  content: "\e6b0";
+}
+
+.icon-zantingtingzhi1:before {
+  content: "\e634";
+}
+
+.icon-gengduo:before {
+  content: "\e601";
+}
+
+.icon-zantingtingzhi:before {
+  content: "\e625";
+}
+
+.icon-quanping1:before {
+  content: "\e639";
+}
+
+.icon-paihang:before {
+  content: "\e67a";
+}
+
+.icon-shanchu:before {
+  content: "\e725";
+}
+
+.icon-SQ:before {
+  content: "\e603";
+}
+
+.icon-bofang1:before {
+  content: "\e662";
+}
+
+.icon-bofang:before {
+  content: "\e66e";
+}
+
+.icon-zuixin:before {
+  content: "\e64b";
+}
+
+.icon-remen:before {
+  content: "\e647";
+}
+
+.icon-recommend:before {
+  content: "\e679";
+}
+
+.icon-sousuo:before {
+  content: "\e653";
+}
+
+.icon-tubiaozhizuomobanyihuifu-:before {
+  content: "\e6a0";
+}
+
