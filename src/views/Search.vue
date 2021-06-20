@@ -20,9 +20,9 @@
 
 <script>
 import HeadLine from '@/components/HeadLine'
-import SearchResult from '../components/SearchResult'
-import SearchSuggest from '../components/SearchSuggest'
-import SearchHotComponent from '../components/SearchHotComponent'
+import SearchResult from '@/components/SearchResult'
+import SearchSuggest from '@/components/SearchSuggest'
+import SearchHotComponent from '@/components/SearchHotComponent'
 export default {
     name:'Search',
     props:['musicObj'],

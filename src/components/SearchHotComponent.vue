@@ -1,6 +1,7 @@
 <template>
     <div class="search_hot_component">
         <p>搜索热词</p>
+        <loading v-show="isLoading"></loading>
         <ul class="hot_words">
             <li 
                 v-for="(item,index) in hotSearch" 
@@ -16,16 +17,20 @@
 </template>
 
 <script>
+import Loading from '@/components/Loading'
 export default {
+    components:{Loading},
     data(){
         return{
             hotSearch:[],
+            isLoading:true,
         }
     },
     created(){
         this.axios('/search/hot').then(d => {
             // console.log(d.data.result.hots);
             this.hotSearch = d.data.result.hots;
+            this.isLoading = false;
         })
     },
 }
