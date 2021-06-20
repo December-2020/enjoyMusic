@@ -111,6 +111,7 @@ export default {
         }
     },
     created(){
+        this.isLoading = true;
         this.axios.get('/toplist/detail').then(d => {
             // console.log(d.data);
             this.allList = d.data.list;
@@ -119,16 +120,19 @@ export default {
             // console.log(this.allList);
             this.isLoading = false;
         });
+        this.isLoading = true;
         this.axios.get('/artist/list?cat=1001').then(d => {
             // console.log(d.data.artists);
             this.artList = d.data.artists.slice(0,6);
             this.isLoading = false;
         });
+        this.isLoading = true;
         this.axios.get('/personalized/mv').then(d => {
             // console.log(d.data.result);
             this.mvList = d.data.result;
             this.isLoading = false;
         });
+        this.isLoading = true;
         this.axios.get('/mv/exclusive/rcmd?limit=4').then(d => {
             // console.log(d.data.data);
             this.wyMvList = d.data.data.map(data => {
@@ -137,6 +141,7 @@ export default {
             })
             this.isLoading = false;
         });
+        this.isLoading = true;
         this.axios.get('/playlist/detail?id=3778678').then(d => {
             // this.admireList = d.data.playlist.tracks.slice(100,106);
             // console.log(d.data.playlist.tracks.slice(100,106));
