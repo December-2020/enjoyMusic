@@ -68,7 +68,10 @@ export default {
             p{
                 color: lighten(#000,20%);
                 font-size: 15px;
-                .text-hidden;
+                overflow: hidden; /*自动隐藏文字*/
+                text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+                white-space: nowrap;/*强制不换行*/
+                width: 100px;
             }
             span{
                 color: darken(#ccc,10%);

@@ -236,7 +236,6 @@ export default {
 .the_charts{
     // 导航栏开始
     background-color: #fafafa;
-    padding: 10px;
     position: relative;
     .title{
         position: fixed;
@@ -276,13 +275,14 @@ export default {
     // 楼层一
     .floor1{
         background-color: #ffff;
-        padding: 10px;
         border: solid 1px lighten(#ccc,15%);
-        padding-top: 10px;
+        padding-top: 5px;
         border-radius: 10px;
+        padding-bottom: 5px;
         ul{
             display: flex;
             justify-content: space-between;
+            padding:0 10px;
             li{
                 // border: solid 1px orange;
                 width: 33.33%;
@@ -291,7 +291,7 @@ export default {
                     justify-content: space-evenly;
                     position: relative;
                     img{
-                        width: 80%;
+                        width: 90%;
                         border-radius: 10px;
                     }
                     .ctime{
@@ -323,9 +323,10 @@ export default {
             }
         }
     }
-    // 楼层一结束
+    // 楼层二
     .floor2{
         ul{
+            padding:0 10px;
             li{
                 border-radius: 10px;
                 &:first-child{
@@ -347,7 +348,10 @@ export default {
     .floor3{
         background-color: #fff;
         border-radius: 10px;
+        padding-top: 1px;
+        padding-bottom: 5px;
         ul{
+            padding:0 10px;
             li{
                 // background-color: #fafafa;
                 border-radius: 10px;
@@ -375,10 +379,14 @@ export default {
     // 楼层四
     .floor4{
         border-radius: 10px;
+        padding-top: 1px;
+        background-color: #fafafa;
+        padding-bottom: 5px;
         ul{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            
             li{
                 width: 50%;
             }

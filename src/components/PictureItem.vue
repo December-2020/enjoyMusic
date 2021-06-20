@@ -53,17 +53,17 @@ export default {
     position: relative;
     margin-bottom: 16px;
     img{
-        width: 25vw;
-        border-radius: 1rem;
+        width: 29vw;
+        border-radius: 10px;
     }
     p{
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        padding: 6px 2px 0 6px;
+        padding: 2px 2px 0 6px;
         min-height: 30px;
-        line-height: 1.2;
+        line-height: 1.3;
         font-size: 13px;
         margin-top: .75rem;
     }
@@ -71,10 +71,10 @@ export default {
         // border: solid 1px red;
         .text-hidden;
         position: absolute;
-        margin-top: 20.8vw;
+        margin-top: 25.5vw;
         max-width: 18vw;
         // margin-left: -5vw;
-        left: 4vw;
+        left: 1.2vw;
         color: white;
         padding: 0 6px;
         // height: 5vw;

@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-quxiao:before {
+  content: "\e608";
+}
+
 .icon-huitui:before {
   content: "\e64e";
 }

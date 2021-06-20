@@ -97,6 +97,7 @@ export default {
     }
     .mv_comment{
         ul{
+            padding:0 10px;
             li{
                 border-radius: 10px;
                 &:nth-child(2n){

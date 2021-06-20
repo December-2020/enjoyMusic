@@ -3,10 +3,10 @@
     <nav-bar v-show="!$route.meta.hideNav"></nav-bar>
     <search-input  v-show="!$route.meta.hideSearch"></search-input>
     <!-- tab切换动画 -->
-    <transition 
+    <!-- <transition 
       enter-active-class="animate__animated animate__fadeInLeft"
       leave-active-class="animate__animated animate__fadeOutRight"
-    >
+    > -->
       <keep-alive>
         <router-view 
           @play="play"
@@ -15,7 +15,7 @@
           :musicObj="musicObj"
         ></router-view>
       </keep-alive>
-    </transition>
+    <!-- </transition> -->
     <!-- <keep-alive>
       <router-view @play="play"></router-view>
     </keep-alive> -->

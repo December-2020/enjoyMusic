@@ -204,6 +204,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 0 10px;
         div{
             width: 33%;
         }

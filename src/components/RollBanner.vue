@@ -31,8 +31,12 @@ export default {
     },
     created(){
         this.autoPlay();
+        this.showIndex = 0;
     },
-    
+    activated(){
+        this.autoPlay();
+        this.showIndex = 0;
+    },
     
     methods:{
         autoPlay(){
@@ -42,7 +46,7 @@ export default {
             },6000);
         },
         next(){
-            this.showIndex = ++this.showIndex>this.imgUrl.length-1?0:this.showIndex;
+            this.showIndex = ++this.showIndex>=this.imgUrl.length?0:this.showIndex;
         },
     },
     

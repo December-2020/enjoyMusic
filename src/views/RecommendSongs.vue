@@ -65,11 +65,14 @@
             <loading v-show="isLoading"></loading>
             <!-- 评论 -->
             <transition
-                enter-active-class="animate__animated animate__fadeInLeft"
-                leave-active-class="animate__animated animate__fadeOutRight"
+                enter-active-class="animate__animated animate__slideInUp"
+                leave-active-class="animate__animated animate__slideOutDown"
             >
                 <div class="song_dis" v-show="showDis">
-                    <border-title>评论</border-title>
+                    <div class="head">
+                        <border-title>评论</border-title>
+                        <i class="iconfont icon-quxiao" @click="showDis=false"></i>
+                    </div>
                     <ul>
                         <li v-for="(item,index) in dis" :key="index">
                             <div class="left">
@@ -82,9 +85,9 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="noData" v-show="isNoData">已经到底了,没有更多评论信息了</div>
                 </div>
             </transition>
-            <div class="noData" v-show="isNoData">已经到底了,没有更多评论信息了</div>
         </div>
     </div>
 </template>
@@ -218,6 +221,7 @@ export default {
     overflow: hidden;
 }
 .recommendsongs{
+    position: relative;
     .top{
         background-color: #fafafa;
         // padding: 10px 20px;
@@ -237,10 +241,12 @@ export default {
                 color: lighten(#000,30%);
                 .text-hidden;
                 -webkit-line-clamp: 2;
+                line-height: 1.3;
             }
         }
         .top_b{
             margin: 10px 0;
+            // border: solid 1px red;
             .icon{
                 display: flex;
                 // justify-content: space-evenly;
@@ -262,10 +268,9 @@ export default {
     }
     .bottom{
         background-color: #fff;
-        padding: 0 20px;
         .title{
             // border: solid 1px orange;
-            padding: 10px 0;
+            padding: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -291,9 +296,28 @@ export default {
                 font-size: 22px;
             }
         }
+        .song_list{
+            padding: 0 10px;
+        }
         .song_dis{
-            margin: 10px 0;
+            position: fixed;
+            bottom: 0;
+            max-height: 80vh;
+            overflow-y: auto;
+            // padding-bottom: 40px;
+            .head{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #f5f5f5;
+                padding: 4px 14px 4px 0;
+                i{
+                    color: #86e6c5;
+                }
+            }
             ul{
+                background-color: white;
+                padding: 10px;
                 li{
                     padding: 10px 0;
                     display: flex;
@@ -312,7 +336,7 @@ export default {
                         .mes{
                             font-size: 14px;
                             margin: 10px 0;
-                            line-height: 1.2;
+                            line-height: 1.4;
                         }
                         .t{
                             font-size: 12px;
@@ -331,7 +355,8 @@ export default {
             text-align: center;
             font-size: 13px;
             color: darken(#ccc,20%);
-            padding-bottom: 30px;
+            padding-bottom: 50px;
+            background-color: #fff;
         }
     }
 }

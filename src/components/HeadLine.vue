@@ -25,7 +25,7 @@ export default {
     background-color: darken(@bgcolor,2%);
     .back{
         // border: solid 1px blue;
-        color: darken(#ccc,20%);
+        color: lighten(#31d59d,20%);
         // border: solid 1px red;
         text-align: center;
         box-sizing: border-box;
@@ -38,7 +38,7 @@ export default {
         margin: 0 auto;
         // border: solid 1px red;
         padding: 10px 0;
-        color: lighten(#000,40%);
+        color: lighten(#31d59d,10%);
         transform: translateX(-20px);
     }
 }
