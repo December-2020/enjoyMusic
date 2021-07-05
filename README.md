@@ -1,3 +1,7 @@
+直接使用：链接无法使用时
+1. 下载dist文件夹
+2. 进入下载后的文件夹中，点击index.html就可以浏览项目
+
 # music
 
 ## Project setup
