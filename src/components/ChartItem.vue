@@ -4,7 +4,9 @@
         <div class="mes">
             <div class="left">
                 <h5>{{item.name}}</h5>
-                <img :src="item.coverImgUrl" alt="">
+                <div class="img">
+                    <img :src="item.coverImgUrl" alt="">
+                </div>
             </div>
             <div class="right">
                 <ul v-if="item.tracks">
@@ -40,12 +42,10 @@ export default {
     overflow: hidden;
 }
 .chart_item{
-    // border: solid 1px red;
     margin: 10px 0;
-    // background-color: white;
     border-radius: 10px;
     padding: 6px;
-    // box-sizing: content-box;
+    height: 125.6px;
     .title{
         float:right;
         color: darken(#ccc,15%);
@@ -65,9 +65,14 @@ export default {
                 color: lighten(#000,30%);
                 font-weight: normal;
             }
-            img{
+            .img{
                 width: 5rem;
                 border-radius: 10px;
+                height: 5rem;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
             }
         }
         .right{

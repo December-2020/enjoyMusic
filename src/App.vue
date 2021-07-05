@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <!-- 专门为手机顶端有挡住的部分而优化 -->
+    <header></header>
     <nav-bar v-show="!$route.meta.hideNav"></nav-bar>
     <search-input  v-show="!$route.meta.hideSearch"></search-input>
     <!-- tab切换动画 -->
@@ -118,3 +120,15 @@ export default {
 }
 </script>
 
+<style lang="less">
+header{
+  height: 30px;
+  width: 100%;
+  background-color: #fafafa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // border: solid 1px red;
+  z-index: 99;
+}
+</style>

@@ -63,12 +63,17 @@ export default {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 146.4px;
     .fl{
         // border: solid 1px red;
+        border-radius: 10px 10px 0 0;
+        height: 94px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 170px;
+        font-size: 0;
         img{
             width: 100%;
-            margin: 0 auto;
-            border-radius: 10px 10px 0 0;
         }
     }
     .f2{

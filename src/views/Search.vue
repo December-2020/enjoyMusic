@@ -76,6 +76,7 @@ export default {
 .search{
     @bgcolor:#fafafa;
     background-color: @bgcolor;
+    margin-top: 30px;
     .searchfrom{
         .search_input{
             position: relative;

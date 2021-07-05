@@ -116,6 +116,7 @@ export default {
     overflow: hidden;
 }
 .chart_singer{
+    margin-top: 30px;
     .singer_list{
         ul{
             li{
@@ -133,8 +134,10 @@ export default {
                 .mes{
                     display: flex;
                     .left{
+                        height: 80px;
+                        overflow: hidden;
                         img{
-                            height: 80px;
+                            height: 100%;
                         }
                     }
                     .right{

@@ -17,7 +17,9 @@
             <ul v-if="floor1List">
                 <li v-for="(item,index) in floor1List" :key="index" @click="gotoList(item.id)">
                     <div class="t">
-                        <img :src="item.coverImgUrl" alt="">
+                        <div class="img">
+                            <img :src="item.coverImgUrl" alt="">
+                        </div>
                         <div class="ctime">{{item.updateFrequency}}</div>
                         <i class="iconfont icon-bofang"></i>
                     </div>
@@ -250,8 +252,8 @@ export default {
         background-color: #fff;
         padding: 10px 0;
         box-sizing: border-box;
-        z-index: 9;
-        top: 45px;
+        z-index: 99;
+        top: 75px;
         ul{
             width: 95vw;
             display: flex;
@@ -295,9 +297,14 @@ export default {
                     display: flex;
                     justify-content: space-evenly;
                     position: relative;
-                    img{
+                    .img{
                         width: 90%;
                         border-radius: 10px;
+                        overflow: hidden;
+                        height: 90%;
+                        img{
+                            width: 100%;
+                        }
                     }
                     .ctime{
                         position: absolute;

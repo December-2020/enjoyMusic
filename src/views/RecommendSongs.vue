@@ -222,6 +222,7 @@ export default {
 }
 .recommendsongs{
     position: relative;
+    margin-top: 30px;
     .top{
         background-color: #fafafa;
         // padding: 10px 20px;
@@ -232,8 +233,10 @@ export default {
             align-items: center;
             .left{
                 margin-right: 20px;
+                width: 120px;
+                overflow: hidden;
                 img{
-                    height: 100px;
+                    width: 100%;
                 }
             }
             .right{

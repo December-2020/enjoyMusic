@@ -4,7 +4,9 @@
         <p>最佳匹配</p>
         <div class="album">
             <div class="left">
-                <img :src="matchAlbum.picUrl" alt="">
+                <div class="img">
+                    <img :src="matchAlbum.picUrl" alt="">
+                </div>
                 <ul>
                     <li>专辑：{{matchAlbum.name}}</li>
                     <li>{{singerName}}</li>
@@ -144,10 +146,14 @@ export default {
         .left{
             display: flex;
             align-items: center;
-            img{
+            .img{
                 height: 4.75rem;
                 border-radius: 10%;
                 margin-right: 1.625rem;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                }
             }
             ul{
                 li{

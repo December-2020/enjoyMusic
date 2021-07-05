@@ -52,6 +52,7 @@ export default {
     align-items: center;
     position: relative;
     margin-bottom: 16px;
+    height: 156.5px;
     img{
         width: 29vw;
         border-radius: 10px;

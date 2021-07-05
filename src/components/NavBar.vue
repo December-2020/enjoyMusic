@@ -21,6 +21,7 @@
     background-color: #fafafa;
     position: relative;
     margin-bottom: .625rem;
+    margin-top: 30px;
     .top{
         padding:6px;
         position: fixed;

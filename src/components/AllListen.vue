@@ -1,7 +1,9 @@
 <template>
     <div class="alllisten">
         <div class="left">
-            <img :src="item.al.picUrl" alt="">
+            <div class="img">
+                <img :src="item.al.picUrl" alt="">
+            </div>
         </div>
         <div class="right">
             <p class="songName">{{item.name}}</p>
@@ -32,14 +34,17 @@ export default {
     padding: 10px;
     padding-top: 0;
     display: flex;
-    // border: solid 1px red;
-    // align-items: center;
+    height: 100px;
     .left{
         margin-right: 1.25rem;
-        img{
+        .img{
             height: 6.25rem;
             width: 6.25rem;
             border-radius: 10px;
+            overflow: hidden;
+            img{
+                height: 100%;
+            }
         }
     }
     .right{

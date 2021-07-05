@@ -26,17 +26,18 @@ export default {
 
 <style lang="less" scoped>
 .singer_item{
-    // border: solid 1px red;
     margin: 10px 0;
+    height: 91px;
     display: flex;
     align-items: center;
     border-radius: 10px;
-    // background-color: #fff;
     .middle{
         margin-right: 1.25rem;
+        width: 7rem;
+        border-radius: 10px;
+        overflow: hidden;
         img{
-            width: 7rem;
-            border-radius: 10px;
+            width: 100%;
         }
     }
     .right{

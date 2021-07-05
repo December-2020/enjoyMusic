@@ -1,6 +1,7 @@
 <template>
     <div class="chart_mv" v-if="mvUrl">
         <head-line>MV</head-line>
+        <loading v-show="isLoading"></loading>
         <video :src="mvUrl" controls></video>
         <border-title>相似mv</border-title>
         <loading v-show="isLoading"></loading>
@@ -49,8 +50,10 @@ export default {
         this.axios.get('mv/url?id='+this.id).then(d => {
             // console.log(d);
             this.mvUrl = d.data.data.url;
+            this.isLoading = false;
         });
         // 相似mv
+        this.isLoading = true;
         this.axios.get('/simi/mv?mvid='+this.id).then(d => {
             let da = d.data.mvs.map(data => {
                 data.picUrl=data.cover;
@@ -61,6 +64,7 @@ export default {
             this.isLoading = false;
         });
         // mv评论
+        this.isLoading = true;
         this.axios.get('/comment/mv?id='+this.id).then(d => {
             // console.log(d.data.comments);
             this.MVComments = d.data.comments;
@@ -78,6 +82,7 @@ export default {
 
 <style lang="less" scoped>
 .chart_mv{
+    margin-top: 30px;
     video{
         width: 98vw;
         margin: 0 1vw;
